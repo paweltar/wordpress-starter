@@ -25,6 +25,7 @@ class StarterSite extends TimberSite {
 		add_filter( 'get_twig', array( $this, 'add_to_twig' ) );
 		add_action( 'init', array( $this, 'register_post_types' ) );
 		add_action( 'init', array( $this, 'register_taxonomies' ) );
+		add_action( 'wp_enqueue_scripts', array( $this, 'loadScripts' ) );
 		parent::__construct();
 	}
 
@@ -55,6 +56,11 @@ class StarterSite extends TimberSite {
 		$twig->addExtension( new Twig_Extension_StringLoader() );
 		$twig->addFilter('myfoo', new Twig_SimpleFilter('myfoo', array($this, 'myfoo')));
 		return $twig;
+	}
+
+	function loadScripts() {
+		wp_enqueue_style( 'styles-bundle', get_template_directory_uri() . '/dist/site.css', array(), filemtime(get_template_directory() . '/dist/site.css') );
+		wp_enqueue_script( 'parcel-bundle', get_template_directory_uri() . '/dist/site.js', array('jquery'), filemtime(get_template_directory() . '/dist/site.js'), true );
 	}
 
 }

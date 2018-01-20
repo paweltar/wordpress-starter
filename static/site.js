@@ -1,5 +1,7 @@
+import './styles/main.scss'
+
 jQuery( document ).ready( function( $ ) {
 
-  // Your JavaScript goes here
+  console.log('test test')
 
 });

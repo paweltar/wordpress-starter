@@ -1,0 +1,1 @@
+{"dependencies":[{"name":"./styles/main.scss"}],"generated":{"js":"\"use strict\";\n\nrequire(\"./styles/main.scss\");\n\njQuery(document).ready(function ($) {\n\n  console.log('test test');\n});"},"hash":"1026d6c08c894a14e1238f61aaaab6ba"}

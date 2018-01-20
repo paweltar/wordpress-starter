@@ -1,0 +1,25 @@
+{
+  "name": "parcel-timber-starter",
+  "version": "1.0.0",
+  "description": "The \"_s\" for Timber: a dead-simple theme that you can build from. The primary purpose of this theme is to provide a file structure rather than a framework for markup or styles. Configure your Sass, scripts, and task runners however you would like!",
+  "main": "postcss.config.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "parcel-bundler": "^1.4.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.2.5",
+    "babel-preset-env": "^1.6.1",
+    "node-sass": "^4.7.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel watch ./static/site.js",
+    "build": "parcel build ./static/site.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
