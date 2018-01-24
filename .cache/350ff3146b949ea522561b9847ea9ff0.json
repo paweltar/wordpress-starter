@@ -1,1 +1,1 @@
-{"dependencies":[{"name":"_css_loader"}],"generated":{"css":"body {\n  background: lightsalmon; }\n","js":"\n        var reloadCSS = require('_css_loader');\n        module.hot.dispose(reloadCSS);\n        module.hot.accept(reloadCSS);\n      "},"hash":"be48cd9ec24e700afe1101f2afdce8d7"}
+{"dependencies":[{"name":"_css_loader"}],"generated":{"css":"body {\n  background: lightgreen; }\n","js":"\n        var reloadCSS = require('_css_loader');\n        module.hot.dispose(reloadCSS);\n        module.hot.accept(reloadCSS);\n      "},"hash":"4e62aa09c6b925b5ef843c2ad7f7162d"}
